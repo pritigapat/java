@@ -1,0 +1,240 @@
+Delivered-To: pritigapat72@gmail.com
+Received: by 2002:a05:6022:a0:b0:43:26f8:7a57 with SMTP id ay32csp2406543lab;
+        Fri, 18 Aug 2023 05:02:07 -0700 (PDT)
+X-Received: by 2002:a17:902:d491:b0:1b8:35fa:cdcc with SMTP id c17-20020a170902d49100b001b835facdccmr2435247plg.5.1692360127430;
+        Fri, 18 Aug 2023 05:02:07 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1692360127; cv=none;
+        d=google.com; s=arc-20160816;
+        b=JXOgPGvkHS+e/uPYf1/w5Gkf83tiYGlryblS7MLEdC90iVPuUtnjyydtxAAOzdDLSa
+         271Gz16C3C1ei4lBCJnkXV6pqrJ/MrXBAI6V7sWkBqtlAwo20LJEtwOY66yfKCPTmcl9
+         6lZZj8t9BtrCiEa7DI899BL64YCG/D6qZJuRYwtWDriC7a4/pxO3tJKRGLq2CTvTdiFU
+         9qJ9IiRHb7/pYGUfmNpWrpupqNfYcMyYIiIyLDZ6yeYVzQzm02AAfG2T2+vgg3MzF0oO
+         ue4nXEUIxfxdEHosBFKFxL5oiwMaXjanjzpf9cbepq222IA0ACJG5khlyuOQJdPDNSGo
+         2Zzg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=1br2DODwJmqDVAY7gNW99v/tX/ipMvcI4upJpYYygy8=;
+        fh=DyO4hFd4FR0I00XNEzB5NCd/jqOfmEUeUITSh+6teqo=;
+        b=iBOj1mm02CIlmt/vv7Qa1OpBuSyqoDgpJIBh3PZ6x8PvJTkcUV0kNEslcOKfSdH9XK
+         a1h9YL0Vhb6WAy1sz+u5RbKceaEKnJ8keBmC1dCL9Y/RDpOAoJEkxgTlIxzQZsHJtTZz
+         CG0p/w8Yzbt+oXI0Ch4OqiNpH+XJE6U4ZFBPEggn7ZbqC38oJ8yBKdhhZva7pGZ/4V1S
+         1lsQl2pVUy1BFlHD5CX1EIfvC8YioSrZQY4CSS83GqVtLlI37sveDkWXMkPHDeyI5o0n
+         Lp31C3Lkhl63bMCoexXdIxouv1ehQIj9y+/0nmMIwE+I4blMS6rLr3h6FprjsRumGIqi
+         L2Yw==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20221208 header.b=flhpr9W3;
+       spf=pass (google.com: domain of kamblemrunalini225@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=kamblemrunalini225@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <kamblemrunalini225@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id n11-20020a1709026a8b00b001bf07153d6fsor2038815plk.8.2023.08.18.05.02.07
+        for <pritigapat72@gmail.com>
+        (Google Transport Security);
+        Fri, 18 Aug 2023 05:02:07 -0700 (PDT)
+Received-SPF: pass (google.com: domain of kamblemrunalini225@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20221208 header.b=flhpr9W3;
+       spf=pass (google.com: domain of kamblemrunalini225@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=kamblemrunalini225@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1692360126; x=1692964926;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=1br2DODwJmqDVAY7gNW99v/tX/ipMvcI4upJpYYygy8=;
+        b=flhpr9W3xSrm+hq1nCiPk3sjk/8zXd33x1VDCg4K2H7q1+mheTydHQnuQ6NPlR2sKf
+         4o1C0rmqUyTpbeWxj2MIC3dIv2NH/gdSp9vRK7DmQsT16YhtnjjiAdEdAYyN9NX4epfa
+         KWAaHnbaTLqZjzYRWskfKOvbNpI9d6SjMbNh4IOWm8xMWB+YgGVPoosaqkppFAWQEh7j
+         /DQZTglEB8g0PvRBadFIOHk+gtWUCRAF8XKl/PGWo7mQR2NYsAK4Yx6Ya1lXlRBZp4CU
+         gdiKWTIOH+RBcIpT+mxD0dkjUm+H3ew6b46vjLsXsw6ayoHiNCgaJ2DouGL3PTSJyHqU
+         DPTg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1692360126; x=1692964926;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=1br2DODwJmqDVAY7gNW99v/tX/ipMvcI4upJpYYygy8=;
+        b=SmXo/o2Tfcf4dy/KjEcdu5JDmKiI181x3yZoG49yy2csIUKhCMPV60jF0p92/1rpgF
+         tfD1EGqb4Ts8bY6FrlBFGTVtJXSu6e8QelCbg+6xq1Jag/8E7E0NIyhDicdopzKfgsIh
+         LUZAuM8M/aTXTmyx4W0taYOHScarv4YEZES6TmIkKBN20ky6VLvoWrKyCqqEAT+rikgv
+         UpQ2SFNCBMc6D25Tx3TV10GztcFiahdUGsQuyEA9yV5cV4bSd58IKyxFi+YhJ9debO94
+         q8Bu7ifjgJ/s5mUEZ+u0P0xaFzBB9/eGNjaR2WbmtjmUG0v55/ZZphmeqUy+/mMtcj2X
+         42Zg==
+X-Gm-Message-State: AOJu0YyrdctVQ49iLe9oPJ45FIgjf1a2zZUEiUMFshHUfsF39Fck114t
+	WcSWnRbgcHGxo2o1m0k00oDyCq0Cck1dsJ+fvP/s/+TM
+X-Google-Smtp-Source: AGHT+IEr1kjgDfJPgVwT4nEDmPb9/QzwbzevYKvMxpOKChTIZZ3TCAR29zUBSyrwF7fntOZxTmTo+6piA/yFHnEqQqE=
+X-Received: by 2002:a17:90a:6aca:b0:269:12a5:c1df with SMTP id
+ b10-20020a17090a6aca00b0026912a5c1dfmr7166454pjm.3.1692360126258; Fri, 18 Aug
+ 2023 05:02:06 -0700 (PDT)
+MIME-Version: 1.0
+From: MRUNALINI KAMBLE <kamblemrunalini225@gmail.com>
+Date: Fri, 18 Aug 2023 17:31:57 +0530
+Message-ID: <CA+FMpmmcX65KOudv26f5rR6nBL96GyhTPqGT8rFSAVcftPu2Bg@mail.gmail.com>
+Subject: 
+To: Priti Gapat <pritigapat72@gmail.com>
+Content-Type: multipart/alternative; boundary="0000000000002860f80603314c14"
+
+--0000000000002860f80603314c14
+Content-Type: text/plain; charset="UTF-8"
+
+public class Board {
+
+        int size;
+        char[][] board;
+
+        Board(int size) {
+            this.size = size;
+            this.board = new char[this.size][this.size];
+            for (int i = 0; i < this.size; i++) {
+                for (int j = 0; j < this.size; j++) {
+                    board[i][j] = '-';
+                }
+            }
+
+        }
+
+        @Override
+        public String toString() {
+            StringBuilder sb = new StringBuilder();
+            // for(char[] oned : this.board){
+            // for(char c : oned)sb.append(c).append("\t");
+            // sb.append("\n");
+            // }
+            for (int i = 0; i < this.size; i++) {
+                for (int j = 0; j < this.size; j++) {
+                    sb.append(this.board[i][j]).append("\t");
+                }
+                sb.append("\n");
+            }
+            return sb.toString();
+        }
+
+
+}
+
+--0000000000002860f80603314c14
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div style=3D"color:rgb(238,255,255);background-color:rgb(=
+38,50,56);font-family:Consolas,&quot;Courier New&quot;,monospace;font-size:=
+14px;line-height:19px;white-space:pre"><div><span style=3D"color:rgb(199,14=
+6,234)">public</span> <span style=3D"color:rgb(199,146,234)">class</span> <=
+span style=3D"color:rgb(255,203,107)">Board</span> <span style=3D"color:rgb=
+(137,221,255)">{</span></div><div>=C2=A0 =C2=A0 </div><div>=C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 <span style=3D"color:rgb(199,146,234)">int</span> size<span s=
+tyle=3D"color:rgb(137,221,255)">;</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 <span style=3D"color:rgb(199,146,234)">char</span><span style=3D"color:=
+rgb(137,221,255)">[][]</span> board<span style=3D"color:rgb(137,221,255)">;=
+</span></div><br><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(=
+130,170,255)">Board</span><span style=3D"color:rgb(137,221,255)">(</span><s=
+pan style=3D"color:rgb(199,146,234)">int</span> <span style=3D"color:rgb(25=
+5,83,112)">size</span><span style=3D"color:rgb(137,221,255)">)</span> <span=
+ style=3D"color:rgb(137,221,255)">{</span></div><div>=C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(255,83,112);font-style:italic=
+">this</span><span style=3D"color:rgb(137,221,255)">.</span>size <span styl=
+e=3D"color:rgb(199,146,234)">=3D</span> size<span style=3D"color:rgb(137,22=
+1,255)">;</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span =
+style=3D"color:rgb(255,83,112);font-style:italic">this</span><span style=3D=
+"color:rgb(137,221,255)">.</span>board <span style=3D"color:rgb(199,146,234=
+)">=3D</span> <span style=3D"color:rgb(137,221,255);font-style:italic">new<=
+/span> <span style=3D"color:rgb(199,146,234)">char</span><span style=3D"col=
+or:rgb(137,221,255)">[</span><span style=3D"color:rgb(255,83,112);font-styl=
+e:italic">this</span><span style=3D"color:rgb(137,221,255)">.</span>size<sp=
+an style=3D"color:rgb(137,221,255)">][</span><span style=3D"color:rgb(255,8=
+3,112);font-style:italic">this</span><span style=3D"color:rgb(137,221,255)"=
+>.</span>size<span style=3D"color:rgb(137,221,255)">];</span></div><div>=C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(137,221,255=
+);font-style:italic">for</span> <span style=3D"color:rgb(137,221,255)">(</s=
+pan><span style=3D"color:rgb(199,146,234)">int</span> i <span style=3D"colo=
+r:rgb(199,146,234)">=3D</span> <span style=3D"color:rgb(247,140,108)">0</sp=
+an><span style=3D"color:rgb(137,221,255)">;</span> i <span style=3D"color:r=
+gb(199,146,234)">&lt;</span> <span style=3D"color:rgb(255,83,112);font-styl=
+e:italic">this</span><span style=3D"color:rgb(137,221,255)">.</span>size<sp=
+an style=3D"color:rgb(137,221,255)">;</span> i<span style=3D"color:rgb(199,=
+146,234)">++</span><span style=3D"color:rgb(137,221,255)">)</span> <span st=
+yle=3D"color:rgb(137,221,255)">{</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(137,221,255);font-=
+style:italic">for</span> <span style=3D"color:rgb(137,221,255)">(</span><sp=
+an style=3D"color:rgb(199,146,234)">int</span> j <span style=3D"color:rgb(1=
+99,146,234)">=3D</span> <span style=3D"color:rgb(247,140,108)">0</span><spa=
+n style=3D"color:rgb(137,221,255)">;</span> j <span style=3D"color:rgb(199,=
+146,234)">&lt;</span> <span style=3D"color:rgb(255,83,112);font-style:itali=
+c">this</span><span style=3D"color:rgb(137,221,255)">.</span>size<span styl=
+e=3D"color:rgb(137,221,255)">;</span> j<span style=3D"color:rgb(199,146,234=
+)">++</span><span style=3D"color:rgb(137,221,255)">)</span> <span style=3D"=
+color:rgb(137,221,255)">{</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 board<span style=3D"color:rgb(137,22=
+1,255)">[</span>i<span style=3D"color:rgb(137,221,255)">][</span>j<span sty=
+le=3D"color:rgb(137,221,255)">]</span> <span style=3D"color:rgb(199,146,234=
+)">=3D</span> <span style=3D"color:rgb(137,221,255)">&#39;</span><span styl=
+e=3D"color:rgb(195,232,141)">-</span><span style=3D"color:rgb(137,221,255)"=
+>&#39;</span><span style=3D"color:rgb(137,221,255)">;</span></div><div>=C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:r=
+gb(137,221,255)">}</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 <span style=3D"color:rgb(137,221,255)">}</span></div><br><div>=C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(137,221,255)">}</span></div><=
+br><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(137,221,255)">=
+@</span><span style=3D"color:rgb(199,146,234)">Override</span></div><div>=
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(199,146,234)">public</=
+span> <span style=3D"color:rgb(199,146,234)">String</span> <span style=3D"c=
+olor:rgb(130,170,255)">toString</span><span style=3D"color:rgb(137,221,255)=
+">()</span> <span style=3D"color:rgb(137,221,255)">{</span></div><div>=C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(199,146,234=
+)">StringBuilder</span> sb <span style=3D"color:rgb(199,146,234)">=3D</span=
+> <span style=3D"color:rgb(137,221,255);font-style:italic">new</span> <span=
+ style=3D"color:rgb(130,170,255)">StringBuilder</span><span style=3D"color:=
+rgb(137,221,255)">();</span></div><div><span style=3D"color:rgb(137,221,255=
+)">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 </span><span style=3D"color:rg=
+b(84,110,122);font-style:italic">// for(char[] oned : this.board){</span></=
+div><div><span style=3D"color:rgb(137,221,255)">=C2=A0 =C2=A0 =C2=A0 =C2=A0=
+ =C2=A0 =C2=A0 </span><span style=3D"color:rgb(84,110,122);font-style:itali=
+c">// for(char c : oned)sb.append(c).append(&quot;\t&quot;);</span></div><d=
+iv><span style=3D"color:rgb(137,221,255)">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 </span><span style=3D"color:rgb(84,110,122);font-style:italic">/=
+/ sb.append(&quot;\n&quot;);</span></div><div><span style=3D"color:rgb(137,=
+221,255)">=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 </span><span style=3D"c=
+olor:rgb(84,110,122);font-style:italic">// }</span></div><div>=C2=A0 =C2=A0=
+ =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(137,221,255);font-sty=
+le:italic">for</span> <span style=3D"color:rgb(137,221,255)">(</span><span =
+style=3D"color:rgb(199,146,234)">int</span> i <span style=3D"color:rgb(199,=
+146,234)">=3D</span> <span style=3D"color:rgb(247,140,108)">0</span><span s=
+tyle=3D"color:rgb(137,221,255)">;</span> i <span style=3D"color:rgb(199,146=
+,234)">&lt;</span> <span style=3D"color:rgb(255,83,112);font-style:italic">=
+this</span><span style=3D"color:rgb(137,221,255)">.</span>size<span style=
+=3D"color:rgb(137,221,255)">;</span> i<span style=3D"color:rgb(199,146,234)=
+">++</span><span style=3D"color:rgb(137,221,255)">)</span> <span style=3D"c=
+olor:rgb(137,221,255)">{</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(137,221,255);font-style:i=
+talic">for</span> <span style=3D"color:rgb(137,221,255)">(</span><span styl=
+e=3D"color:rgb(199,146,234)">int</span> j <span style=3D"color:rgb(199,146,=
+234)">=3D</span> <span style=3D"color:rgb(247,140,108)">0</span><span style=
+=3D"color:rgb(137,221,255)">;</span> j <span style=3D"color:rgb(199,146,234=
+)">&lt;</span> <span style=3D"color:rgb(255,83,112);font-style:italic">this=
+</span><span style=3D"color:rgb(137,221,255)">.</span>size<span style=3D"co=
+lor:rgb(137,221,255)">;</span> j<span style=3D"color:rgb(199,146,234)">++</=
+span><span style=3D"color:rgb(137,221,255)">)</span> <span style=3D"color:r=
+gb(137,221,255)">{</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 sb<span style=3D"color:rgb(137,221,255)">.<=
+/span><span style=3D"color:rgb(130,170,255)">append</span><span style=3D"co=
+lor:rgb(137,221,255)">(</span><span style=3D"color:rgb(255,83,112);font-sty=
+le:italic">this</span><span style=3D"color:rgb(137,221,255)">.</span>board<=
+span style=3D"color:rgb(137,221,255)">[</span>i<span style=3D"color:rgb(137=
+,221,255)">][</span>j<span style=3D"color:rgb(137,221,255)">]).</span><span=
+ style=3D"color:rgb(130,170,255)">append</span><span style=3D"color:rgb(137=
+,221,255)">(</span><span style=3D"color:rgb(137,221,255)">&quot;\t&quot;</s=
+pan><span style=3D"color:rgb(137,221,255)">);</span></div><div>=C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(137,=
+221,255)">}</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 sb<span style=3D"color:rgb(137,221,255)">.</span><span style=3D"=
+color:rgb(130,170,255)">append</span><span style=3D"color:rgb(137,221,255)"=
+>(</span><span style=3D"color:rgb(137,221,255)">&quot;\n&quot;</span><span =
+style=3D"color:rgb(137,221,255)">);</span></div><div>=C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(137,221,255)">}</span></div><=
+div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(137,=
+221,255);font-style:italic">return</span> sb<span style=3D"color:rgb(137,22=
+1,255)">.</span><span style=3D"color:rgb(130,170,255)">toString</span><span=
+ style=3D"color:rgb(137,221,255)">();</span></div><div>=C2=A0 =C2=A0 =C2=A0=
+ =C2=A0 <span style=3D"color:rgb(137,221,255)">}</span></div><br><div>=C2=
+=A0 =C2=A0 </div><div><span style=3D"color:rgb(137,221,255)">}</span></div>=
+<br></div></div>
+
+--0000000000002860f80603314c14--

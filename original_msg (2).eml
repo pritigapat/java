@@ -1,0 +1,636 @@
+Delivered-To: pritigapat72@gmail.com
+Received: by 2002:a05:6022:a0:b0:43:26f8:7a57 with SMTP id ay32csp2406895lab;
+        Fri, 18 Aug 2023 05:02:34 -0700 (PDT)
+X-Received: by 2002:a05:6a21:999f:b0:145:3bd9:1377 with SMTP id ve31-20020a056a21999f00b001453bd91377mr2895485pzb.5.1692360154294;
+        Fri, 18 Aug 2023 05:02:34 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1692360154; cv=none;
+        d=google.com; s=arc-20160816;
+        b=VX/YmAAgF/ANTJF8e5Uzra7qH5L28HrURdPbM0aYC4RZtftTXuzhQHcsy6MPp255bt
+         vfC9lfJVGsavv6kGAJqLAjxuye6CtFRGzuO4ZMq9h2EwDJfsl5sBkT8zzbU4ztOoE67l
+         xZzbaZGe5CGbyY8A+sUtembYLhfrcnjL6f15Ls3CXTfjxvB9zzBPZzqNA49WRaWpz2jk
+         hAKeDSRsaUHqWwCEBhvsdA1cLnAYM2dMyta+UTqGqMMTRnJlfC+AaGqyfwFUTc4ASwOH
+         WPYBs/0RgGPXgHZnVLl1jBhVXGim2Q1+nYuoFRBp+OFNJIyDPBJ0lirAjaT64fpvX3QT
+         ftOg==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=y8rtpxk+MhvcMRfAdfhfkm54kJV5UZbkM2haSt7tZEs=;
+        fh=DyO4hFd4FR0I00XNEzB5NCd/jqOfmEUeUITSh+6teqo=;
+        b=XxZ6wuNz2UEMKKYv0FkCd87Zi+f7VIIL2uMQn+B5lZx5haijQzCN+dlm4GKBAXsWWF
+         6IxRbBPkjzfyDDjarMp+DxjuC2lsLCd67KFtZpX5PYZw1gtHFO5UHR4E9BZUIm9L5c3X
+         Tj36K9c97RRyGAxNmNvfVjmTELfbgV10HYRKALITOm3mWVDkhVQxzs3BNjy/GVPabd9t
+         h0Uip9MghhAUpIfc8TLsBr2Wg9/5pgi62gEeG1hP1pTeyv7cB2eVtY8MTn8fPmyjE6Pe
+         XyZnZssDV9X/Zgc/ktBnRgTO5KByOiQkarSo6wlHS/qgMV7SgmttJXsUsKvzdCDWiBap
+         tb6Q==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20221208 header.b=nzF5+O1U;
+       spf=pass (google.com: domain of kamblemrunalini225@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=kamblemrunalini225@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <kamblemrunalini225@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id m70-20020a633f49000000b00557390cc5basor1031303pga.7.2023.08.18.05.02.34
+        for <pritigapat72@gmail.com>
+        (Google Transport Security);
+        Fri, 18 Aug 2023 05:02:34 -0700 (PDT)
+Received-SPF: pass (google.com: domain of kamblemrunalini225@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20221208 header.b=nzF5+O1U;
+       spf=pass (google.com: domain of kamblemrunalini225@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=kamblemrunalini225@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1692360153; x=1692964953;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=y8rtpxk+MhvcMRfAdfhfkm54kJV5UZbkM2haSt7tZEs=;
+        b=nzF5+O1UD+WCnmVTyptmp23xfAtDI01CU0C0CDZ4c3ge8vjkEiciFdJgdEmBUTxDd7
+         pkey+aYRl/5tYZpOZcxloNzLeCyZ315qAd5J2543JRhvMA3QPfFPCScRZiQGFwi9MmyL
+         UX5UjbDO2BxhEcws9HN/MWgAwte9/BNF0LR/orilhI8J2jrOVRYkvpNMcZ1COO/kpoWf
+         OryosV2T100U7KiZIBP06wAvVFb405pLNtC3Uv4cLPcYpRwdJ1z3olhJBDIzb00ow1TZ
+         4Zr1yCZ4ihHr2sLU4mg5U7iVVMbYaenpIPba7l5Sxy2eX9RV0D3pM6/maHntVKoo6G+E
+         gsoQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1692360153; x=1692964953;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=y8rtpxk+MhvcMRfAdfhfkm54kJV5UZbkM2haSt7tZEs=;
+        b=WJlwPtHqA1M/uaW1dlwZxF388ycWtZ7S5Q/fRSTvG3+Ggk6lDKZc7Vq+HKJyv0yfVy
+         f2m0UHKVFe9rqwTTa0kkT6xCvHzIh/tNwxed27FG76EY5U5ekyeCoYUjfar0/tIGuv6S
+         3zvUwUJasvIRKJJhEBUyfAwB87Q/UrEnf2ZWEksjiZEoDaukeUmrBRL6roYHI/JK+K5p
+         FpTlNQyFY7+Ug6DMcskeTqfX+yJywd5qsyh8FB4pOBuhRLG0XNg3/YttpOx5rXP6FmYc
+         6IDvNnaHMqk9KQY0IYnKiMTpMcvL7WD+o5dlkh/PPoaAWiQj0Q0yM6FtpxNtnUDiWl96
+         AAVw==
+X-Gm-Message-State: AOJu0YwNpsBrRjQs/bJGFuyVtkzmnCWpQuPHxqfnrZL6AVfVpj2cHG3+
+	QpMHm67DdmDpVdj6zCHvZpeBNNLfZN6xsgSLiUYH52tcApQ=
+X-Google-Smtp-Source: AGHT+IEgvWPNsExSeKB8d1kwMxSG1KbRTYzelJN9+4XGdHUpLqLKIEGtd92o1pE6EcRMNWeY5SSxXbfE2OkuqFzX7I0=
+X-Received: by 2002:a17:90a:4706:b0:269:439d:8c3f with SMTP id
+ h6-20020a17090a470600b00269439d8c3fmr2162995pjg.22.1692360153176; Fri, 18 Aug
+ 2023 05:02:33 -0700 (PDT)
+MIME-Version: 1.0
+From: MRUNALINI KAMBLE <kamblemrunalini225@gmail.com>
+Date: Fri, 18 Aug 2023 17:32:24 +0530
+Message-ID: <CA+FMpmkvdKaTX52FEzmex1ySvUHrnmNg=GPOJ3isOQcYp0DfkQ@mail.gmail.com>
+Subject: 
+To: Priti Gapat <pritigapat72@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000c31fdb0603314d50"
+
+--000000000000c31fdb0603314d50
+Content-Type: text/plain; charset="UTF-8"
+
+import java.util.*;
+public class Game {
+        Board board;
+        Player[] players;
+        int turn;// = even -> p1; odd -> p2;
+        int noOfMoves;
+        boolean gameOver;
+        String zeroPattern;
+        String crossPattern;
+
+public static Scanner scn = new Scanner(System.in);
+
+    Game(Board board, Player[] players) {
+        this.board = board;
+        this.players = players;
+        this.turn = 0;
+        this.noOfMoves = 0;
+        this.gameOver = false;
+        this.zeroPattern = "";
+        this.crossPattern = "";
+        for(int i = 0; i < board.size; i++){
+            zeroPattern += 'O';
+            crossPattern += 'X';
+        }
+    }
+
+
+    public void play() {
+        System.out.println(board);
+        while(!this.gameOver) {
+
+            this.noOfMoves ++;
+            if(this.noOfMoves > board.size * board.size) {
+                System.out.println("Match Draw");
+                return;
+            }
+            int[] idxs = getIndex();
+            int rn = idxs[0], cn = idxs[1];
+            board.board[rn][cn] = players[turn].symbol;
+            if(this.noOfMoves >= 2 * board.size - 1 && checkIfTheGameIsEnded
+()) {
+                System.out.println(board);
+                this.gameOver = true;
+                System.out.println(players[turn].name + " has won !!");
+                return;
+            }
+            turn = (turn + 1) % 2;
+            System.out.println(board);
+        }
+    }
+
+
+            public int[] getIndex(){
+                while(true){
+                    System.out.println(players[turn].name + "s turn give
+index : ");
+                    int idx = scn.nextInt() - 1;
+                    int rn = idx / board.size , cn = idx %  board.size;
+                    if(rn < 0 || cn < 0 || rn >= board.size || cn >= board.
+size){
+                        System.out.println("out of bount index");
+                        continue;
+                    }
+                    if(board.board[rn][cn] != '-'){
+                        System.out.println("position already filled , try
+again");
+                        continue;
+                    }
+                    return new  int[]{rn , cn};
+                }
+            }
+
+ public boolean checkIfTheGameIsEnded() {
+        // ROWS
+       StringBuilder sb ;
+        for(int i = 0; i < board.size; i ++) {
+            sb = new StringBuilder();
+            sb = new StringBuilder();
+            for(int j = 0; j < board.size; j ++) sb.append(board.board[i][j
+]);
+            if(getResult(sb)) return true;
+        }
+        //COLUMN
+        for(int i = 0; i < board.size; i ++) {
+            sb =  new StringBuilder();
+            sb = new StringBuilder();
+            for(int j = 0; j < board.size; j ++) sb.append(board.board[j][i
+]);
+            if(getResult(sb)) return true;
+        }
+        //mejor dional
+        int i = 0 , j = 0;
+        sb = new StringBuilder();
+        while(i < board.size){
+            sb.append(board.board[i++][j++]);
+        }
+        if(getResult(sb)) return true;
+        //minor digonal
+
+         i = 0 ; j = board.size - 1;
+         sb = new StringBuilder();
+         while(i < board.size){
+             sb.append(board.board[i++][j--]);
+         }
+         if (getResult(sb))return true;
+         return false;
+
+}
+
+    public boolean getResult(StringBuilder sb){
+        if(sb.toString().equals(zeroPattern) || sb.toString().equals(
+crossPattern)) return true;
+        return false;
+    }
+}
+
+--000000000000c31fdb0603314d50
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div style=3D"color:rgb(238,255,255);background-color:rgb(=
+38,50,56);font-family:Consolas,&quot;Courier New&quot;,monospace;font-size:=
+14px;line-height:19px;white-space:pre"><div><span style=3D"color:rgb(247,14=
+0,108)">import</span> <span style=3D"color:rgb(199,146,234)">java</span><sp=
+an style=3D"color:rgb(137,221,255)">.</span><span style=3D"color:rgb(199,14=
+6,234)">util</span><span style=3D"color:rgb(137,221,255)">.</span><span sty=
+le=3D"color:rgb(255,83,112);font-style:italic">*</span><span style=3D"color=
+:rgb(137,221,255)">;</span></div><div><span style=3D"color:rgb(199,146,234)=
+">public</span> <span style=3D"color:rgb(199,146,234)">class</span> <span s=
+tyle=3D"color:rgb(255,203,107)">Game</span> <span style=3D"color:rgb(137,22=
+1,255)">{</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color=
+:rgb(199,146,234)">Board</span> board<span style=3D"color:rgb(137,221,255)"=
+>;</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(19=
+9,146,234)">Player</span><span style=3D"color:rgb(137,221,255)">[]</span> p=
+layers<span style=3D"color:rgb(137,221,255)">;</span></div><div>=C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(199,146,234)">int</span> turn<sp=
+an style=3D"color:rgb(137,221,255)">;</span><span style=3D"color:rgb(84,110=
+,122);font-style:italic">// =3D even -&gt; p1; odd -&gt; p2;</span></div><d=
+iv>=C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(199,146,234)">int</=
+span> noOfMoves<span style=3D"color:rgb(137,221,255)">;</span></div><div>=
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(199,146,234)">boolean<=
+/span> gameOver<span style=3D"color:rgb(137,221,255)">;</span></div><div>=
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(199,146,234)">String</=
+span> zeroPattern<span style=3D"color:rgb(137,221,255)">;</span></div><div>=
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(199,146,234)">String</=
+span> crossPattern<span style=3D"color:rgb(137,221,255)">;</span></div><br>=
+<div><span style=3D"color:rgb(199,146,234)">public</span> <span style=3D"co=
+lor:rgb(199,146,234)">static</span> <span style=3D"color:rgb(199,146,234)">=
+Scanner</span> scn <span style=3D"color:rgb(199,146,234)">=3D</span> <span =
+style=3D"color:rgb(137,221,255);font-style:italic">new</span> <span style=
+=3D"color:rgb(130,170,255)">Scanner</span><span style=3D"color:rgb(137,221,=
+255)">(</span>System<span style=3D"color:rgb(137,221,255)">.</span>in<span =
+style=3D"color:rgb(137,221,255)">);</span></div><br><div>=C2=A0 =C2=A0 <spa=
+n style=3D"color:rgb(130,170,255)">Game</span><span style=3D"color:rgb(137,=
+221,255)">(</span><span style=3D"color:rgb(199,146,234)">Board</span> <span=
+ style=3D"color:rgb(255,83,112)">board</span><span style=3D"color:rgb(137,2=
+21,255)">,</span> <span style=3D"color:rgb(199,146,234)">Player</span><span=
+ style=3D"color:rgb(137,221,255)">[]</span> <span style=3D"color:rgb(255,83=
+,112)">players</span><span style=3D"color:rgb(137,221,255)">)</span> <span =
+style=3D"color:rgb(137,221,255)">{</span></div><div>=C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 <span style=3D"color:rgb(255,83,112);font-style:italic">this</span><=
+span style=3D"color:rgb(137,221,255)">.</span>board <span style=3D"color:rg=
+b(199,146,234)">=3D</span> board<span style=3D"color:rgb(137,221,255)">;</s=
+pan></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(255,83,=
+112);font-style:italic">this</span><span style=3D"color:rgb(137,221,255)">.=
+</span>players <span style=3D"color:rgb(199,146,234)">=3D</span> players<sp=
+an style=3D"color:rgb(137,221,255)">;</span></div><div>=C2=A0 =C2=A0 =C2=A0=
+ =C2=A0 <span style=3D"color:rgb(255,83,112);font-style:italic">this</span>=
+<span style=3D"color:rgb(137,221,255)">.</span>turn <span style=3D"color:rg=
+b(199,146,234)">=3D</span> <span style=3D"color:rgb(247,140,108)">0</span><=
+span style=3D"color:rgb(137,221,255)">;</span></div><div>=C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 <span style=3D"color:rgb(255,83,112);font-style:italic">this</sp=
+an><span style=3D"color:rgb(137,221,255)">.</span>noOfMoves <span style=3D"=
+color:rgb(199,146,234)">=3D</span> <span style=3D"color:rgb(247,140,108)">0=
+</span><span style=3D"color:rgb(137,221,255)">;</span></div><div>=C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(255,83,112);font-style:italic">t=
+his</span><span style=3D"color:rgb(137,221,255)">.</span>gameOver <span sty=
+le=3D"color:rgb(199,146,234)">=3D</span> <span style=3D"color:rgb(247,140,1=
+08)">false</span><span style=3D"color:rgb(137,221,255)">;</span></div><div>=
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(255,83,112);font-style=
+:italic">this</span><span style=3D"color:rgb(137,221,255)">.</span>zeroPatt=
+ern <span style=3D"color:rgb(199,146,234)">=3D</span> <span style=3D"color:=
+rgb(137,221,255)">&quot;&quot;</span><span style=3D"color:rgb(137,221,255)"=
+>;</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(25=
+5,83,112);font-style:italic">this</span><span style=3D"color:rgb(137,221,25=
+5)">.</span>crossPattern <span style=3D"color:rgb(199,146,234)">=3D</span> =
+<span style=3D"color:rgb(137,221,255)">&quot;&quot;</span><span style=3D"co=
+lor:rgb(137,221,255)">;</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 <span =
+style=3D"color:rgb(137,221,255);font-style:italic">for</span><span style=3D=
+"color:rgb(137,221,255)">(</span><span style=3D"color:rgb(199,146,234)">int=
+</span> i <span style=3D"color:rgb(199,146,234)">=3D</span> <span style=3D"=
+color:rgb(247,140,108)">0</span><span style=3D"color:rgb(137,221,255)">;</s=
+pan> i <span style=3D"color:rgb(199,146,234)">&lt;</span> board<span style=
+=3D"color:rgb(137,221,255)">.</span>size<span style=3D"color:rgb(137,221,25=
+5)">;</span> i<span style=3D"color:rgb(199,146,234)">++</span><span style=
+=3D"color:rgb(137,221,255)">){</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0=
+ =C2=A0 =C2=A0 zeroPattern <span style=3D"color:rgb(199,146,234)">+=3D</spa=
+n> <span style=3D"color:rgb(137,221,255)">&#39;</span><span style=3D"color:=
+rgb(195,232,141)">O</span><span style=3D"color:rgb(137,221,255)">&#39;</spa=
+n><span style=3D"color:rgb(137,221,255)">;</span></div><div>=C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 crossPattern <span style=3D"color:rgb(199,146,2=
+34)">+=3D</span> <span style=3D"color:rgb(137,221,255)">&#39;</span><span s=
+tyle=3D"color:rgb(195,232,141)">X</span><span style=3D"color:rgb(137,221,25=
+5)">&#39;</span><span style=3D"color:rgb(137,221,255)">;</span></div><div>=
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(137,221,255)">}</span>=
+</div><div>=C2=A0 =C2=A0 <span style=3D"color:rgb(137,221,255)">}</span></d=
+iv><div>=C2=A0</div><br><div>=C2=A0 =C2=A0 <span style=3D"color:rgb(199,146=
+,234)">public</span> <span style=3D"color:rgb(199,146,234)">void</span> <sp=
+an style=3D"color:rgb(130,170,255)">play</span><span style=3D"color:rgb(137=
+,221,255)">()</span> <span style=3D"color:rgb(137,221,255)">{</span></div><=
+div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 System<span style=3D"color:rgb(137,221,255)=
+">.</span>out<span style=3D"color:rgb(137,221,255)">.</span><span style=3D"=
+color:rgb(130,170,255)">println</span><span style=3D"color:rgb(137,221,255)=
+">(</span>board<span style=3D"color:rgb(137,221,255)">);</span></div><div>=
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(137,221,255);font-styl=
+e:italic">while</span><span style=3D"color:rgb(137,221,255)">(</span><span =
+style=3D"color:rgb(199,146,234)">!</span><span style=3D"color:rgb(255,83,11=
+2);font-style:italic">this</span><span style=3D"color:rgb(137,221,255)">.</=
+span>gameOver<span style=3D"color:rgb(137,221,255)">)</span> <span style=3D=
+"color:rgb(137,221,255)">{</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 </d=
+iv><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(=
+255,83,112);font-style:italic">this</span><span style=3D"color:rgb(137,221,=
+255)">.</span>noOfMoves <span style=3D"color:rgb(199,146,234)">++</span><sp=
+an style=3D"color:rgb(137,221,255)">;</span></div><div>=C2=A0 =C2=A0 =C2=A0=
+ =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(137,221,255);font-style:ital=
+ic">if</span><span style=3D"color:rgb(137,221,255)">(</span><span style=3D"=
+color:rgb(255,83,112);font-style:italic">this</span><span style=3D"color:rg=
+b(137,221,255)">.</span>noOfMoves <span style=3D"color:rgb(199,146,234)">&g=
+t;</span> board<span style=3D"color:rgb(137,221,255)">.</span>size <span st=
+yle=3D"color:rgb(199,146,234)">*</span> board<span style=3D"color:rgb(137,2=
+21,255)">.</span>size<span style=3D"color:rgb(137,221,255)">)</span> <span =
+style=3D"color:rgb(137,221,255)">{</span></div><div>=C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 System<span style=3D"color:rgb(137,221,2=
+55)">.</span>out<span style=3D"color:rgb(137,221,255)">.</span><span style=
+=3D"color:rgb(130,170,255)">println</span><span style=3D"color:rgb(137,221,=
+255)">(</span><span style=3D"color:rgb(137,221,255)">&quot;</span><span sty=
+le=3D"color:rgb(195,232,141)">Match Draw</span><span style=3D"color:rgb(137=
+,221,255)">&quot;</span><span style=3D"color:rgb(137,221,255)">);</span></d=
+iv><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=
+=3D"color:rgb(137,221,255);font-style:italic">return</span><span style=3D"c=
+olor:rgb(137,221,255)">;</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 <span style=3D"color:rgb(137,221,255)">}</span></div><div>=C2=A0=
+ =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(199,146,234)">=
+int</span><span style=3D"color:rgb(137,221,255)">[]</span> idxs <span style=
+=3D"color:rgb(199,146,234)">=3D</span> <span style=3D"color:rgb(130,170,255=
+)">getIndex</span><span style=3D"color:rgb(137,221,255)">();</span></div><d=
+iv>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(199,1=
+46,234)">int</span> rn <span style=3D"color:rgb(199,146,234)">=3D</span> id=
+xs<span style=3D"color:rgb(137,221,255)">[</span><span style=3D"color:rgb(2=
+47,140,108)">0</span><span style=3D"color:rgb(137,221,255)">],</span> cn <s=
+pan style=3D"color:rgb(199,146,234)">=3D</span> idxs<span style=3D"color:rg=
+b(137,221,255)">[</span><span style=3D"color:rgb(247,140,108)">1</span><spa=
+n style=3D"color:rgb(137,221,255)">];</span></div><div>=C2=A0 =C2=A0 =C2=A0=
+ =C2=A0 =C2=A0 =C2=A0 board<span style=3D"color:rgb(137,221,255)">.</span>b=
+oard<span style=3D"color:rgb(137,221,255)">[</span>rn<span style=3D"color:r=
+gb(137,221,255)">][</span>cn<span style=3D"color:rgb(137,221,255)">]</span>=
+ <span style=3D"color:rgb(199,146,234)">=3D</span> players<span style=3D"co=
+lor:rgb(137,221,255)">[</span>turn<span style=3D"color:rgb(137,221,255)">].=
+</span>symbol<span style=3D"color:rgb(137,221,255)">;</span></div><div>=C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(137,221,255=
+);font-style:italic">if</span><span style=3D"color:rgb(137,221,255)">(</spa=
+n><span style=3D"color:rgb(255,83,112);font-style:italic">this</span><span =
+style=3D"color:rgb(137,221,255)">.</span>noOfMoves <span style=3D"color:rgb=
+(199,146,234)">&gt;=3D</span> <span style=3D"color:rgb(247,140,108)">2</spa=
+n> <span style=3D"color:rgb(199,146,234)">*</span> board<span style=3D"colo=
+r:rgb(137,221,255)">.</span>size <span style=3D"color:rgb(199,146,234)">-</=
+span> <span style=3D"color:rgb(247,140,108)">1</span> <span style=3D"color:=
+rgb(199,146,234)">&amp;&amp;</span> <span style=3D"color:rgb(130,170,255)">=
+checkIfTheGameIsEnded</span><span style=3D"color:rgb(137,221,255)">())</spa=
+n> <span style=3D"color:rgb(137,221,255)">{</span></div><div>=C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 System<span style=3D"color:rgb(13=
+7,221,255)">.</span>out<span style=3D"color:rgb(137,221,255)">.</span><span=
+ style=3D"color:rgb(130,170,255)">println</span><span style=3D"color:rgb(13=
+7,221,255)">(</span>board<span style=3D"color:rgb(137,221,255)">);</span></=
+div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span styl=
+e=3D"color:rgb(255,83,112);font-style:italic">this</span><span style=3D"col=
+or:rgb(137,221,255)">.</span>gameOver <span style=3D"color:rgb(199,146,234)=
+">=3D</span> <span style=3D"color:rgb(247,140,108)">true</span><span style=
+=3D"color:rgb(137,221,255)">;</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 System<span style=3D"color:rgb(137,221,255)">.<=
+/span>out<span style=3D"color:rgb(137,221,255)">.</span><span style=3D"colo=
+r:rgb(130,170,255)">println</span><span style=3D"color:rgb(137,221,255)">(<=
+/span>players<span style=3D"color:rgb(137,221,255)">[</span>turn<span style=
+=3D"color:rgb(137,221,255)">].</span>name <span style=3D"color:rgb(199,146,=
+234)">+</span> <span style=3D"color:rgb(137,221,255)">&quot;</span><span st=
+yle=3D"color:rgb(195,232,141)"> has won !!</span><span style=3D"color:rgb(1=
+37,221,255)">&quot;</span><span style=3D"color:rgb(137,221,255)">);</span><=
+/div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span sty=
+le=3D"color:rgb(137,221,255);font-style:italic">return</span><span style=3D=
+"color:rgb(137,221,255)">;</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 <span style=3D"color:rgb(137,221,255)">}</span></div><div>=C2=A0=
+ =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 turn <span style=3D"color:rgb(199,146,2=
+34)">=3D</span> <span style=3D"color:rgb(137,221,255)">(</span>turn <span s=
+tyle=3D"color:rgb(199,146,234)">+</span> <span style=3D"color:rgb(247,140,1=
+08)">1</span><span style=3D"color:rgb(137,221,255)">)</span> <span style=3D=
+"color:rgb(199,146,234)">%</span> <span style=3D"color:rgb(247,140,108)">2<=
+/span><span style=3D"color:rgb(137,221,255)">;</span></div><div>=C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 System<span style=3D"color:rgb(137,221,255)=
+">.</span>out<span style=3D"color:rgb(137,221,255)">.</span><span style=3D"=
+color:rgb(130,170,255)">println</span><span style=3D"color:rgb(137,221,255)=
+">(</span>board<span style=3D"color:rgb(137,221,255)">);</span></div><div>=
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(137,221,255)">}</span>=
+</div><div>=C2=A0 =C2=A0 <span style=3D"color:rgb(137,221,255)">}</span></d=
+iv><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 </div><br><div>=C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(199,146,234)">publ=
+ic</span> <span style=3D"color:rgb(199,146,234)">int</span><span style=3D"c=
+olor:rgb(137,221,255)">[]</span> <span style=3D"color:rgb(130,170,255)">get=
+Index</span><span style=3D"color:rgb(137,221,255)">(){</span></div><div>=C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:r=
+gb(137,221,255);font-style:italic">while</span><span style=3D"color:rgb(137=
+,221,255)">(</span><span style=3D"color:rgb(247,140,108)">true</span><span =
+style=3D"color:rgb(137,221,255)">){</span></div><div>=C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 System<span style=3D"color=
+:rgb(137,221,255)">.</span>out<span style=3D"color:rgb(137,221,255)">.</spa=
+n><span style=3D"color:rgb(130,170,255)">println</span><span style=3D"color=
+:rgb(137,221,255)">(</span>players<span style=3D"color:rgb(137,221,255)">[<=
+/span>turn<span style=3D"color:rgb(137,221,255)">].</span>name <span style=
+=3D"color:rgb(199,146,234)">+</span> <span style=3D"color:rgb(137,221,255)"=
+>&quot;</span><span style=3D"color:rgb(195,232,141)">s turn give index : </=
+span><span style=3D"color:rgb(137,221,255)">&quot;</span><span style=3D"col=
+or:rgb(137,221,255)">);</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0=
+ =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(199,146,234)">=
+int</span> idx <span style=3D"color:rgb(199,146,234)">=3D</span> scn<span s=
+tyle=3D"color:rgb(137,221,255)">.</span><span style=3D"color:rgb(130,170,25=
+5)">nextInt</span><span style=3D"color:rgb(137,221,255)">()</span> <span st=
+yle=3D"color:rgb(199,146,234)">-</span> <span style=3D"color:rgb(247,140,10=
+8)">1</span><span style=3D"color:rgb(137,221,255)">;</span></div><div>=C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span st=
+yle=3D"color:rgb(199,146,234)">int</span> rn <span style=3D"color:rgb(199,1=
+46,234)">=3D</span> idx <span style=3D"color:rgb(199,146,234)">/</span> boa=
+rd<span style=3D"color:rgb(137,221,255)">.</span>size <span style=3D"color:=
+rgb(137,221,255)">,</span> cn <span style=3D"color:rgb(199,146,234)">=3D</s=
+pan> idx <span style=3D"color:rgb(199,146,234)">%</span> =C2=A0board<span s=
+tyle=3D"color:rgb(137,221,255)">.</span>size<span style=3D"color:rgb(137,22=
+1,255)">;</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0=
+ =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(137,221,255);font-style:ital=
+ic">if</span><span style=3D"color:rgb(137,221,255)">(</span>rn <span style=
+=3D"color:rgb(199,146,234)">&lt;</span> <span style=3D"color:rgb(247,140,10=
+8)">0</span> <span style=3D"color:rgb(199,146,234)">||</span> cn <span styl=
+e=3D"color:rgb(199,146,234)">&lt;</span> <span style=3D"color:rgb(247,140,1=
+08)">0</span> <span style=3D"color:rgb(199,146,234)">||</span> rn <span sty=
+le=3D"color:rgb(199,146,234)">&gt;=3D</span> board<span style=3D"color:rgb(=
+137,221,255)">.</span>size <span style=3D"color:rgb(199,146,234)">||</span>=
+ cn <span style=3D"color:rgb(199,146,234)">&gt;=3D</span> board<span style=
+=3D"color:rgb(137,221,255)">.</span>size<span style=3D"color:rgb(137,221,25=
+5)">){</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 System<span style=3D"color:rgb(137,221,2=
+55)">.</span>out<span style=3D"color:rgb(137,221,255)">.</span><span style=
+=3D"color:rgb(130,170,255)">println</span><span style=3D"color:rgb(137,221,=
+255)">(</span><span style=3D"color:rgb(137,221,255)">&quot;</span><span sty=
+le=3D"color:rgb(195,232,141)">out of bount index</span><span style=3D"color=
+:rgb(137,221,255)">&quot;</span><span style=3D"color:rgb(137,221,255)">);</=
+span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(137,221,255);font-style:i=
+talic">continue</span><span style=3D"color:rgb(137,221,255)">;</span></div>=
+<div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+<span style=3D"color:rgb(137,221,255)">}</span></div><div>=C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:r=
+gb(137,221,255);font-style:italic">if</span><span style=3D"color:rgb(137,22=
+1,255)">(</span>board<span style=3D"color:rgb(137,221,255)">.</span>board<s=
+pan style=3D"color:rgb(137,221,255)">[</span>rn<span style=3D"color:rgb(137=
+,221,255)">][</span>cn<span style=3D"color:rgb(137,221,255)">]</span> <span=
+ style=3D"color:rgb(199,146,234)">!=3D</span> <span style=3D"color:rgb(137,=
+221,255)">&#39;</span><span style=3D"color:rgb(195,232,141)">-</span><span =
+style=3D"color:rgb(137,221,255)">&#39;</span><span style=3D"color:rgb(137,2=
+21,255)">){</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 System<span style=3D"color:rgb(137,2=
+21,255)">.</span>out<span style=3D"color:rgb(137,221,255)">.</span><span st=
+yle=3D"color:rgb(130,170,255)">println</span><span style=3D"color:rgb(137,2=
+21,255)">(</span><span style=3D"color:rgb(137,221,255)">&quot;</span><span =
+style=3D"color:rgb(195,232,141)">position already filled , try again</span>=
+<span style=3D"color:rgb(137,221,255)">&quot;</span><span style=3D"color:rg=
+b(137,221,255)">);</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(137,=
+221,255);font-style:italic">continue</span><span style=3D"color:rgb(137,221=
+,255)">;</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(137,221,255)">}</span></div><=
+div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <=
+span style=3D"color:rgb(137,221,255);font-style:italic">return</span> <span=
+ style=3D"color:rgb(137,221,255);font-style:italic">new</span> =C2=A0<span =
+style=3D"color:rgb(199,146,234)">int</span><span style=3D"color:rgb(137,221=
+,255)">[]{</span>rn <span style=3D"color:rgb(137,221,255)">,</span> cn<span=
+ style=3D"color:rgb(137,221,255)">};</span></div><div>=C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(137,221,255)">}=
+</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"=
+color:rgb(137,221,255)">}</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 </di=
+v><div>=C2=A0<span style=3D"color:rgb(199,146,234)">public</span> <span sty=
+le=3D"color:rgb(199,146,234)">boolean</span> <span style=3D"color:rgb(130,1=
+70,255)">checkIfTheGameIsEnded</span><span style=3D"color:rgb(137,221,255)"=
+>()</span> <span style=3D"color:rgb(137,221,255)">{</span></div><div><span =
+style=3D"color:rgb(137,221,255)">=C2=A0 =C2=A0 =C2=A0 =C2=A0 </span><span s=
+tyle=3D"color:rgb(84,110,122);font-style:italic">// ROWS</span></div><div>=
+=C2=A0 =C2=A0 =C2=A0 =C2=A0<span style=3D"color:rgb(199,146,234)">StringBui=
+lder</span> sb <span style=3D"color:rgb(137,221,255)">;</span></div><div>=
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(137,221,255);font-styl=
+e:italic">for</span><span style=3D"color:rgb(137,221,255)">(</span><span st=
+yle=3D"color:rgb(199,146,234)">int</span> i <span style=3D"color:rgb(199,14=
+6,234)">=3D</span> <span style=3D"color:rgb(247,140,108)">0</span><span sty=
+le=3D"color:rgb(137,221,255)">;</span> i <span style=3D"color:rgb(199,146,2=
+34)">&lt;</span> board<span style=3D"color:rgb(137,221,255)">.</span>size<s=
+pan style=3D"color:rgb(137,221,255)">;</span> i <span style=3D"color:rgb(19=
+9,146,234)">++</span><span style=3D"color:rgb(137,221,255)">)</span> <span =
+style=3D"color:rgb(137,221,255)">{</span></div><div>=C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 sb <span style=3D"color:rgb(199,146,234)">=3D</span> <=
+span style=3D"color:rgb(137,221,255);font-style:italic">new</span> <span st=
+yle=3D"color:rgb(130,170,255)">StringBuilder</span><span style=3D"color:rgb=
+(137,221,255)">();</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 sb <span style=3D"color:rgb(199,146,234)">=3D</span> <span style=3D"col=
+or:rgb(137,221,255);font-style:italic">new</span> <span style=3D"color:rgb(=
+130,170,255)">StringBuilder</span><span style=3D"color:rgb(137,221,255)">()=
+;</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D=
+"color:rgb(137,221,255);font-style:italic">for</span><span style=3D"color:r=
+gb(137,221,255)">(</span><span style=3D"color:rgb(199,146,234)">int</span> =
+j <span style=3D"color:rgb(199,146,234)">=3D</span> <span style=3D"color:rg=
+b(247,140,108)">0</span><span style=3D"color:rgb(137,221,255)">;</span> j <=
+span style=3D"color:rgb(199,146,234)">&lt;</span> board<span style=3D"color=
+:rgb(137,221,255)">.</span>size<span style=3D"color:rgb(137,221,255)">;</sp=
+an> j <span style=3D"color:rgb(199,146,234)">++</span><span style=3D"color:=
+rgb(137,221,255)">)</span> sb<span style=3D"color:rgb(137,221,255)">.</span=
+><span style=3D"color:rgb(130,170,255)">append</span><span style=3D"color:r=
+gb(137,221,255)">(</span>board<span style=3D"color:rgb(137,221,255)">.</spa=
+n>board<span style=3D"color:rgb(137,221,255)">[</span>i<span style=3D"color=
+:rgb(137,221,255)">][</span>j<span style=3D"color:rgb(137,221,255)">]);</sp=
+an></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"colo=
+r:rgb(137,221,255);font-style:italic">if</span><span style=3D"color:rgb(137=
+,221,255)">(</span><span style=3D"color:rgb(130,170,255)">getResult</span><=
+span style=3D"color:rgb(137,221,255)">(</span>sb<span style=3D"color:rgb(13=
+7,221,255)">))</span> <span style=3D"color:rgb(137,221,255);font-style:ital=
+ic">return</span> <span style=3D"color:rgb(247,140,108)">true</span><span s=
+tyle=3D"color:rgb(137,221,255)">;</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 <span style=3D"color:rgb(137,221,255)">}</span></div><div><span style=
+=3D"color:rgb(137,221,255)">=C2=A0 =C2=A0 =C2=A0 =C2=A0 </span><span style=
+=3D"color:rgb(84,110,122);font-style:italic">//COLUMN</span></div><div>=C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(137,221,255);font-style:i=
+talic">for</span><span style=3D"color:rgb(137,221,255)">(</span><span style=
+=3D"color:rgb(199,146,234)">int</span> i <span style=3D"color:rgb(199,146,2=
+34)">=3D</span> <span style=3D"color:rgb(247,140,108)">0</span><span style=
+=3D"color:rgb(137,221,255)">;</span> i <span style=3D"color:rgb(199,146,234=
+)">&lt;</span> board<span style=3D"color:rgb(137,221,255)">.</span>size<spa=
+n style=3D"color:rgb(137,221,255)">;</span> i <span style=3D"color:rgb(199,=
+146,234)">++</span><span style=3D"color:rgb(137,221,255)">)</span> <span st=
+yle=3D"color:rgb(137,221,255)">{</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 sb <span style=3D"color:rgb(199,146,234)">=3D</span> =C2=
+=A0<span style=3D"color:rgb(137,221,255);font-style:italic">new</span> <spa=
+n style=3D"color:rgb(130,170,255)">StringBuilder</span><span style=3D"color=
+:rgb(137,221,255)">();</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 sb <span style=3D"color:rgb(199,146,234)">=3D</span> <span style=3D"=
+color:rgb(137,221,255);font-style:italic">new</span> <span style=3D"color:r=
+gb(130,170,255)">StringBuilder</span><span style=3D"color:rgb(137,221,255)"=
+>();</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=
+=3D"color:rgb(137,221,255);font-style:italic">for</span><span style=3D"colo=
+r:rgb(137,221,255)">(</span><span style=3D"color:rgb(199,146,234)">int</spa=
+n> j <span style=3D"color:rgb(199,146,234)">=3D</span> <span style=3D"color=
+:rgb(247,140,108)">0</span><span style=3D"color:rgb(137,221,255)">;</span> =
+j <span style=3D"color:rgb(199,146,234)">&lt;</span> board<span style=3D"co=
+lor:rgb(137,221,255)">.</span>size<span style=3D"color:rgb(137,221,255)">;<=
+/span> j <span style=3D"color:rgb(199,146,234)">++</span><span style=3D"col=
+or:rgb(137,221,255)">)</span> sb<span style=3D"color:rgb(137,221,255)">.</s=
+pan><span style=3D"color:rgb(130,170,255)">append</span><span style=3D"colo=
+r:rgb(137,221,255)">(</span>board<span style=3D"color:rgb(137,221,255)">.</=
+span>board<span style=3D"color:rgb(137,221,255)">[</span>j<span style=3D"co=
+lor:rgb(137,221,255)">][</span>i<span style=3D"color:rgb(137,221,255)">]);<=
+/span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"c=
+olor:rgb(137,221,255);font-style:italic">if</span><span style=3D"color:rgb(=
+137,221,255)">(</span><span style=3D"color:rgb(130,170,255)">getResult</spa=
+n><span style=3D"color:rgb(137,221,255)">(</span>sb<span style=3D"color:rgb=
+(137,221,255)">))</span> <span style=3D"color:rgb(137,221,255);font-style:i=
+talic">return</span> <span style=3D"color:rgb(247,140,108)">true</span><spa=
+n style=3D"color:rgb(137,221,255)">;</span></div><div>=C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 <span style=3D"color:rgb(137,221,255)">}</span></div><div><span styl=
+e=3D"color:rgb(137,221,255)">=C2=A0 =C2=A0 =C2=A0 =C2=A0 </span><span style=
+=3D"color:rgb(84,110,122);font-style:italic">//mejor dional</span></div><di=
+v>=C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(199,146,234)">int</s=
+pan> i <span style=3D"color:rgb(199,146,234)">=3D</span> <span style=3D"col=
+or:rgb(247,140,108)">0</span> <span style=3D"color:rgb(137,221,255)">,</spa=
+n> j <span style=3D"color:rgb(199,146,234)">=3D</span> <span style=3D"color=
+:rgb(247,140,108)">0</span><span style=3D"color:rgb(137,221,255)">;</span><=
+/div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 sb <span style=3D"color:rgb(199,146,2=
+34)">=3D</span> <span style=3D"color:rgb(137,221,255);font-style:italic">ne=
+w</span> <span style=3D"color:rgb(130,170,255)">StringBuilder</span><span s=
+tyle=3D"color:rgb(137,221,255)">();</span></div><div>=C2=A0 =C2=A0 =C2=A0 =
+=C2=A0 <span style=3D"color:rgb(137,221,255);font-style:italic">while</span=
+><span style=3D"color:rgb(137,221,255)">(</span>i <span style=3D"color:rgb(=
+199,146,234)">&lt;</span> board<span style=3D"color:rgb(137,221,255)">.</sp=
+an>size<span style=3D"color:rgb(137,221,255)">){</span></div><div>=C2=A0 =
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 sb<span style=3D"color:rgb(137,221,255)"=
+>.</span><span style=3D"color:rgb(130,170,255)">append</span><span style=3D=
+"color:rgb(137,221,255)">(</span>board<span style=3D"color:rgb(137,221,255)=
+">.</span>board<span style=3D"color:rgb(137,221,255)">[</span>i<span style=
+=3D"color:rgb(199,146,234)">++</span><span style=3D"color:rgb(137,221,255)"=
+>][</span>j<span style=3D"color:rgb(199,146,234)">++</span><span style=3D"c=
+olor:rgb(137,221,255)">]);</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 <sp=
+an style=3D"color:rgb(137,221,255)">}</span></div><div>=C2=A0 =C2=A0 =C2=A0=
+ =C2=A0 <span style=3D"color:rgb(137,221,255);font-style:italic">if</span><=
+span style=3D"color:rgb(137,221,255)">(</span><span style=3D"color:rgb(130,=
+170,255)">getResult</span><span style=3D"color:rgb(137,221,255)">(</span>sb=
+<span style=3D"color:rgb(137,221,255)">))</span> <span style=3D"color:rgb(1=
+37,221,255);font-style:italic">return</span> <span style=3D"color:rgb(247,1=
+40,108)">true</span><span style=3D"color:rgb(137,221,255)">;</span></div><d=
+iv><span style=3D"color:rgb(137,221,255)">=C2=A0 =C2=A0 =C2=A0 =C2=A0 </spa=
+n><span style=3D"color:rgb(84,110,122);font-style:italic">//minor digonal</=
+span></div><br><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0i <span style=3D"colo=
+r:rgb(199,146,234)">=3D</span> <span style=3D"color:rgb(247,140,108)">0</sp=
+an> <span style=3D"color:rgb(137,221,255)">;</span> j <span style=3D"color:=
+rgb(199,146,234)">=3D</span> board<span style=3D"color:rgb(137,221,255)">.<=
+/span>size <span style=3D"color:rgb(199,146,234)">-</span> <span style=3D"c=
+olor:rgb(247,140,108)">1</span><span style=3D"color:rgb(137,221,255)">;</sp=
+an></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0sb <span style=3D"color:rgb=
+(199,146,234)">=3D</span> <span style=3D"color:rgb(137,221,255);font-style:=
+italic">new</span> <span style=3D"color:rgb(130,170,255)">StringBuilder</sp=
+an><span style=3D"color:rgb(137,221,255)">();</span></div><div>=C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0<span style=3D"color:rgb(137,221,255);font-style:it=
+alic">while</span><span style=3D"color:rgb(137,221,255)">(</span>i <span st=
+yle=3D"color:rgb(199,146,234)">&lt;</span> board<span style=3D"color:rgb(13=
+7,221,255)">.</span>size<span style=3D"color:rgb(137,221,255)">){</span></d=
+iv><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0sb<span style=3D"co=
+lor:rgb(137,221,255)">.</span><span style=3D"color:rgb(130,170,255)">append=
+</span><span style=3D"color:rgb(137,221,255)">(</span>board<span style=3D"c=
+olor:rgb(137,221,255)">.</span>board<span style=3D"color:rgb(137,221,255)">=
+[</span>i<span style=3D"color:rgb(199,146,234)">++</span><span style=3D"col=
+or:rgb(137,221,255)">][</span>j<span style=3D"color:rgb(199,146,234)">--</s=
+pan><span style=3D"color:rgb(137,221,255)">]);</span></div><div>=C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0<span style=3D"color:rgb(137,221,255)">}</span></di=
+v><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0<span style=3D"color:rgb(137,221,2=
+55);font-style:italic">if</span> <span style=3D"color:rgb(137,221,255)">(</=
+span><span style=3D"color:rgb(130,170,255)">getResult</span><span style=3D"=
+color:rgb(137,221,255)">(</span>sb<span style=3D"color:rgb(137,221,255)">))=
+</span><span style=3D"color:rgb(137,221,255);font-style:italic">return</spa=
+n> <span style=3D"color:rgb(247,140,108)">true</span><span style=3D"color:r=
+gb(137,221,255)">;</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0<span=
+ style=3D"color:rgb(137,221,255);font-style:italic">return</span> <span sty=
+le=3D"color:rgb(247,140,108)">false</span><span style=3D"color:rgb(137,221,=
+255)">;</span></div><br><div><span style=3D"color:rgb(137,221,255)">}</span=
+></div><br><div>=C2=A0 =C2=A0 <span style=3D"color:rgb(199,146,234)">public=
+</span> <span style=3D"color:rgb(199,146,234)">boolean</span> <span style=
+=3D"color:rgb(130,170,255)">getResult</span><span style=3D"color:rgb(137,22=
+1,255)">(</span><span style=3D"color:rgb(199,146,234)">StringBuilder</span>=
+ <span style=3D"color:rgb(255,83,112)">sb</span><span style=3D"color:rgb(13=
+7,221,255)">){</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"=
+color:rgb(137,221,255);font-style:italic">if</span><span style=3D"color:rgb=
+(137,221,255)">(</span>sb<span style=3D"color:rgb(137,221,255)">.</span><sp=
+an style=3D"color:rgb(130,170,255)">toString</span><span style=3D"color:rgb=
+(137,221,255)">().</span><span style=3D"color:rgb(130,170,255)">equals</spa=
+n><span style=3D"color:rgb(137,221,255)">(</span>zeroPattern<span style=3D"=
+color:rgb(137,221,255)">)</span> <span style=3D"color:rgb(199,146,234)">||<=
+/span> sb<span style=3D"color:rgb(137,221,255)">.</span><span style=3D"colo=
+r:rgb(130,170,255)">toString</span><span style=3D"color:rgb(137,221,255)">(=
+).</span><span style=3D"color:rgb(130,170,255)">equals</span><span style=3D=
+"color:rgb(137,221,255)">(</span>crossPattern<span style=3D"color:rgb(137,2=
+21,255)">))</span> <span style=3D"color:rgb(137,221,255);font-style:italic"=
+>return</span> <span style=3D"color:rgb(247,140,108)">true</span><span styl=
+e=3D"color:rgb(137,221,255)">;</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0=
+ <span style=3D"color:rgb(137,221,255);font-style:italic">return</span> <sp=
+an style=3D"color:rgb(247,140,108)">false</span><span style=3D"color:rgb(13=
+7,221,255)">;</span></div><div>=C2=A0 =C2=A0 <span style=3D"color:rgb(137,2=
+21,255)">}</span></div><div><span style=3D"color:rgb(137,221,255)">}</span>=
+</div><br></div></div>
+
+--000000000000c31fdb0603314d50--

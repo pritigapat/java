@@ -1,0 +1,154 @@
+Delivered-To: pritigapat72@gmail.com
+Received: by 2002:a05:6022:a0:b0:43:26f8:7a57 with SMTP id ay32csp2407252lab;
+        Fri, 18 Aug 2023 05:03:02 -0700 (PDT)
+X-Received: by 2002:a17:90a:13ca:b0:26d:4695:4040 with SMTP id s10-20020a17090a13ca00b0026d46954040mr1392926pjf.4.1692360182009;
+        Fri, 18 Aug 2023 05:03:02 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1692360181; cv=none;
+        d=google.com; s=arc-20160816;
+        b=TQo5r68LmXILqkxNZ71DEShnEtTxC6yu+Cd7IZgClCMm96hLEDx0m1ZCl+ULJTWNed
+         TYAFiFw6vL/vruajzQd2Ja/9PSz0rI5worvHhWZwLMpS3H4+FZQqu2bpWRx8QfP9o+S1
+         N1QFj4bNgf39JlTPXARvZ/Rsyqt4xaN0/t/Iyv5K2GZy+w+xpsndMPo/HgK7pYVIZ2G5
+         QLJzat8McFpsKNuUsLEm2zfwTpJbAgjPFas5yRF25SPJvOS94ty+oQx+HTXk2OizZxcN
+         JqVhJeLY2ugiDpN4e2sj4b3lBXHXRtEPoTHdVZz81hjqzWR+Zg2vGZSq+TLqLyK6g3Py
+         ZIdQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=E00alu9tSj2bvuAZd5KotbU3kETqWCxUQf7oHHDWwws=;
+        fh=DyO4hFd4FR0I00XNEzB5NCd/jqOfmEUeUITSh+6teqo=;
+        b=JynDoXM/WZ2pByu5bTWrWxbhOWUljt7DLl0M1fSa4o9aKZZmVpDArx4NTHHgMbYVDQ
+         OftFkVQlCW9MwFm0O0RJLEUP0qJXczPGVNaIy+1hJeefdBP3/jlEEnkZxEYrGqtcBQF5
+         e4+1JDssm4cDdhgf5gLBpHU/oj+8/gls0HuXigxgAiC9Ep/JWSGCzM5KNLRjUTIxs7hJ
+         3osRFontfFAri0JAzuShDcr5UpcMhfFTaOH+FycrqFn0bY6NvZldhhDTakmVgLugeo1o
+         s2MxZLdnluzoSYB/KAC07ifCoP3LCLx5QvZ4n15o70BrTJ57SqhMfFi729DtuNQqhqim
+         fDRg==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20221208 header.b=BUlVTlIl;
+       spf=pass (google.com: domain of kamblemrunalini225@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=kamblemrunalini225@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+Return-Path: <kamblemrunalini225@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id t8-20020a17090aba8800b00262fe740e53sor916488pjr.0.2023.08.18.05.03.01
+        for <pritigapat72@gmail.com>
+        (Google Transport Security);
+        Fri, 18 Aug 2023 05:03:01 -0700 (PDT)
+Received-SPF: pass (google.com: domain of kamblemrunalini225@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20221208 header.b=BUlVTlIl;
+       spf=pass (google.com: domain of kamblemrunalini225@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=kamblemrunalini225@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1692360181; x=1692964981;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=E00alu9tSj2bvuAZd5KotbU3kETqWCxUQf7oHHDWwws=;
+        b=BUlVTlIl7Urj+cV5O42kfmgT9bE/hotR+AMC9iPy7ZMxHqYu53yisdWcFRDsUh64k/
+         UOT8cKcZsZi2caG+8bPZVWy43tzEsm+uib7hlDienZkJ8DJ/wAzf/ZqN2nP6dsmXiSKG
+         yt1KXhxU3FD7GdFY+/8Izfqtzz7+hA34Ti0TVgkn8YNSuPnwty5GnrlH8ui0hk7X5aww
+         gtXWLbDH4qmDHqGQJee3XXoXd0cWFgvbIOKc1eaulYLR5h1wKjWZISQI7m/ELOwdPgOv
+         1XCe7J8zTILf0yNTEFh3S7rx7nxuUNKtIfsY+aS50fPZSOKA1asN5kK/LjUG2aXf2SzN
+         BTaQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1692360181; x=1692964981;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=E00alu9tSj2bvuAZd5KotbU3kETqWCxUQf7oHHDWwws=;
+        b=Rni0aNZJpZjNsmBL61HLdIK5G17P5HvbNXEcaDKghnMxSxNjTnX9a9Dd9o4i5/av+n
+         uaV6mZsqRSw5k9pvRaxlQox2WDGj6uTxp0NQdIPVgzfxJLHWz2s0DwHCjsxsDRQjRQaS
+         cXvV6TjC1d8+DBI4Ewwn8SjoDpz04uLFusbaH6aCKQTUsp6qOG1xmCLMwZHfAzrUhaUd
+         c/I3cipKtNX+jMIl/bQRCzpVdieSnMQLazQvCKTo8VMYV0sem95JMMm7HI/STIifsC6l
+         8BOdpXX8mLzhEa2CG5hnU5V8TYCi0klccddb1N/kVssNmLuP9DJRt61fWOW4AvVAOpP6
+         gVUA==
+X-Gm-Message-State: AOJu0YwwIXda+P5IxNhu4o+SxsA78FQqvHKXm6jMbqNoumD7k0q+ZTpt
+	5lmSteoC79DHRAwjaxtLpqpoFao0zwM/378rTfGdlpFxvvE=
+X-Google-Smtp-Source: AGHT+IH874Mo2e+fy3xMmMA/9mtD2DRf1ikgr92QHTr92qSKYn/0cWhYOEeG/HAzaI1vq646PU/r5dKMgpuw0MfLNyk=
+X-Received: by 2002:a17:90b:2246:b0:268:13c4:b800 with SMTP id
+ hk6-20020a17090b224600b0026813c4b800mr2261027pjb.21.1692360180951; Fri, 18
+ Aug 2023 05:03:00 -0700 (PDT)
+MIME-Version: 1.0
+From: MRUNALINI KAMBLE <kamblemrunalini225@gmail.com>
+Date: Fri, 18 Aug 2023 17:32:52 +0530
+Message-ID: <CA+FMpm=nuq8Q20R3+QCKAq-OaOX8V-D2FnNj1uKpo-FXvAw==w@mail.gmail.com>
+Subject: 
+To: Priti Gapat <pritigapat72@gmail.com>
+Content-Type: multipart/alternative; boundary="0000000000006aef0b0603314f80"
+
+--0000000000006aef0b0603314f80
+Content-Type: text/plain; charset="UTF-8"
+
+public class Main {
+
+        public static void main(String[] args) {
+            Player p1 = new Player("Samrudhi");
+            System.out.println(p1);
+            Player p2 = new Player("Sayali");
+            System.out.println(p2);
+
+            Board board = new Board(3);
+            Game game = new Game(board, new Player[] { p1, p2 });
+            game.play();
+        }
+
+}
+
+--0000000000006aef0b0603314f80
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div style=3D"color:rgb(238,255,255);background-color:rgb(=
+38,50,56);font-family:Consolas,&quot;Courier New&quot;,monospace;font-size:=
+14px;line-height:19px;white-space:pre"><div><span style=3D"color:rgb(199,14=
+6,234)">public</span> <span style=3D"color:rgb(199,146,234)">class</span> <=
+span style=3D"color:rgb(255,203,107)">Main</span> <span style=3D"color:rgb(=
+137,221,255)">{</span></div><div>=C2=A0 =C2=A0 </div><div>=C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 <span style=3D"color:rgb(199,146,234)">public</span> <span style=
+=3D"color:rgb(199,146,234)">static</span> <span style=3D"color:rgb(199,146,=
+234)">void</span> <span style=3D"color:rgb(130,170,255)">main</span><span s=
+tyle=3D"color:rgb(137,221,255)">(</span><span style=3D"color:rgb(199,146,23=
+4)">String</span><span style=3D"color:rgb(137,221,255)">[]</span> <span sty=
+le=3D"color:rgb(255,83,112)">args</span><span style=3D"color:rgb(137,221,25=
+5)">)</span> <span style=3D"color:rgb(137,221,255)">{</span></div><div>=C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(199,146,234=
+)">Player</span> p1 <span style=3D"color:rgb(199,146,234)">=3D</span> <span=
+ style=3D"color:rgb(137,221,255);font-style:italic">new</span> <span style=
+=3D"color:rgb(130,170,255)">Player</span><span style=3D"color:rgb(137,221,2=
+55)">(</span><span style=3D"color:rgb(137,221,255)">&quot;</span><span styl=
+e=3D"color:rgb(195,232,141)">Samrudhi</span><span style=3D"color:rgb(137,22=
+1,255)">&quot;</span><span style=3D"color:rgb(137,221,255)">);</span></div>=
+<div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 System<span style=3D"color:r=
+gb(137,221,255)">.</span>out<span style=3D"color:rgb(137,221,255)">.</span>=
+<span style=3D"color:rgb(130,170,255)">println</span><span style=3D"color:r=
+gb(137,221,255)">(</span>p1<span style=3D"color:rgb(137,221,255)">);</span>=
+</div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:r=
+gb(199,146,234)">Player</span> p2 <span style=3D"color:rgb(199,146,234)">=
+=3D</span> <span style=3D"color:rgb(137,221,255);font-style:italic">new</sp=
+an> <span style=3D"color:rgb(130,170,255)">Player</span><span style=3D"colo=
+r:rgb(137,221,255)">(</span><span style=3D"color:rgb(137,221,255)">&quot;</=
+span><span style=3D"color:rgb(195,232,141)">Sayali</span><span style=3D"col=
+or:rgb(137,221,255)">&quot;</span><span style=3D"color:rgb(137,221,255)">);=
+</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 System<span sty=
+le=3D"color:rgb(137,221,255)">.</span>out<span style=3D"color:rgb(137,221,2=
+55)">.</span><span style=3D"color:rgb(130,170,255)">println</span><span sty=
+le=3D"color:rgb(137,221,255)">(</span>p2<span style=3D"color:rgb(137,221,25=
+5)">);</span></div><br><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span=
+ style=3D"color:rgb(199,146,234)">Board</span> board <span style=3D"color:r=
+gb(199,146,234)">=3D</span> <span style=3D"color:rgb(137,221,255);font-styl=
+e:italic">new</span> <span style=3D"color:rgb(130,170,255)">Board</span><sp=
+an style=3D"color:rgb(137,221,255)">(</span><span style=3D"color:rgb(247,14=
+0,108)">3</span><span style=3D"color:rgb(137,221,255)">);</span></div><div>=
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(199,146,=
+234)">Game</span> game <span style=3D"color:rgb(199,146,234)">=3D</span> <s=
+pan style=3D"color:rgb(137,221,255);font-style:italic">new</span> <span sty=
+le=3D"color:rgb(130,170,255)">Game</span><span style=3D"color:rgb(137,221,2=
+55)">(</span>board<span style=3D"color:rgb(137,221,255)">,</span> <span sty=
+le=3D"color:rgb(137,221,255);font-style:italic">new</span> <span style=3D"c=
+olor:rgb(199,146,234)">Player</span><span style=3D"color:rgb(137,221,255)">=
+[]</span> <span style=3D"color:rgb(137,221,255)">{</span> p1<span style=3D"=
+color:rgb(137,221,255)">,</span> p2 <span style=3D"color:rgb(137,221,255)">=
+});</span></div><div>=C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 game<span st=
+yle=3D"color:rgb(137,221,255)">.</span><span style=3D"color:rgb(130,170,255=
+)">play</span><span style=3D"color:rgb(137,221,255)">();</span></div><div>=
+=C2=A0 =C2=A0 =C2=A0 =C2=A0 <span style=3D"color:rgb(137,221,255)">}</span>=
+</div><div>=C2=A0 =C2=A0 </div><div><span style=3D"color:rgb(137,221,255)">=
+}</span></div></div></div>
+
+--0000000000006aef0b0603314f80--
